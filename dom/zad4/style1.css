@@ -1,0 +1,154 @@
+.container {
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3vw;
+    color: rgb(163, 159, 151);
+    margin-bottom: 2vh;
+
+}
+
+article {
+    background-color: rgb(114, 87, 60);
+    padding-left: 5vw;
+    overflow:scroll; 
+    height:100%;
+    width: 53vw;
+}
+
+footer {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+}
+body {
+    background-image: url('./background.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+nav {
+    width: 7vw;
+    height: 100%;
+    background-color: rgba(108, 89, 60, 0.44);
+}
+
+nav ul {
+    color: rgb(163, 159, 151);
+    background-color: rgb(85, 78, 78);
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+}
+
+nav ul li {
+    text-align: left;
+    font-size: 1.5vw;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(163, 159, 151);
+    display: block;
+}
+
+nav ul li a {
+    color: rgb(163, 159, 151);
+    text-decoration: none;
+    display: block;
+    padding: 1vw;
+}
+
+form {
+    display: flex;  
+    justify-content: space-evenly;
+}
+.textInputs {
+    flex: 2;
+}
+.picker {
+    flex:2;
+}
+
+nav ul li:hover {
+    background-color: rgba(163, 159, 151, 0.2);
+}
+footer {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(85, 78, 78);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(163, 159, 151);
+    font-size: 1.1vw;
+    width: 65vw;
+    height: 20vh;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.nestedList li {
+    padding: 1vw;
+    padding-left: 2vw;
+}
+.nestedList a {
+    text-decoration: none;
+    color: rgb(163, 159, 151);
+
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr {
+    border: 10px solid transparent;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #818181;
+}
+
+th {
+    background-color: #715210;
+    color: white;
+}
+#hamburger {
+    display: none;
+}
+
+#navList {
+    display: flex;
+}
+
+@media (max-width: 600px) {
+    #hamburger {
+        display: block;
+    }
+
+    #navList {
+        display: none;
+    }
+
+    #navList.open {
+        display: block;
+    }
+
+    #navList li {
+        display: block;
+    }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>Art Gallery</h1>
+    <div id="albums"></div>
+    <div id="photos"></div>
+    <div id="lightbox">
+      <img id="lightbox-img" />
+      <button id="prev" style="position:absolute; top:50%; left:10px;">Prev</button>
+    <button id="next" style="position:absolute; top:50%; right:10px;">Next</button>
+    </div>
+    <form id="new-photo-form">
+      <input type="text" id="albumId" name="albumId" placeholder="Album ID" />
+      <input type="text" id="title" name="title" placeholder="Title" />
+      <input type="text" id="url" name="url" placeholder="URL" />
+      <input
+        type="text"
+        id="thumbnailUrl"
+        name="thumbnailUrl"
+        placeholder="Thumbnail URL"
+      />
+      <button type="submit">Add Photo</button>
+    </form>
+    <script src="main.js"></script>
+  </body>
+</html>
