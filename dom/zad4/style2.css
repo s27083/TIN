@@ -197,27 +197,27 @@ li:hover .nestedList {
 
 
 #hamburger {
-    display: none; /* Hidden by default */
+    display: none;
   }
   
   #navList {
-    display: flex; /* Displayed as a row on large screens */
+    display: flex; 
   }
   
-  @media (max-width: 600px) { /* Adjust as needed */
+  @media (max-width: 600px) { 
     #hamburger {
-      display: block; /* Shown on small screens */
+      display: block;
     }
   
     #navList {
-      display: none; /* Hidden by default on small screens */
+      display: none; 
     }
   
     #navList.open {
-      display: block; /* Shown when the "open" class is added */
+      display: block; 
     }
   
     #navList li {
-      display: block; /* List items displayed as a column on small screens */
+      display: block; 
     }
   }
